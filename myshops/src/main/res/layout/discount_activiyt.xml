@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:indicator_height="10dp"
+        app:indicator_margin="6dp"
+        app:indicator_width="10dp" />
+
+    <RelativeLayout
+        android:layout_width="355dp"
+        android:layout_height="130dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DDDDDD" />
+
+        <TextView
+            android:id="@+id/Discoun_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/Discoun_youhuiTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Discoun_nameTv"
+            android:layout_alignBottom="@+id/Discoun_nameTv"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/Discoun_nameTv"
+            android:layout_toRightOf="@+id/Discoun_nameTv"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Discoun_desTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Discoun_nameTv"
+            android:layout_alignStart="@+id/Discoun_nameTv"
+            android:layout_below="@+id/Discoun_nameTv"
+            android:layout_marginTop="19dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Discoun_yuanTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Discoun_desTv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="12dp"
+            android:text="请选择你的口味"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/discount_rela_liao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/textView2">
+
+            <TextView
+                android:id="@+id/discpunt_liaoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/discpunt_liao_xuanTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/gb_feed"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/discpunt_liaoTv"
+                android:layout_alignBottom="@+id/discpunt_liaoTv"
+                android:layout_toRightOf="@+id/discpunt_liaoTv"
+                android:layout_toEndOf="@+id/discpunt_liaoTv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/discount_rela_wen"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/discount_rela_liao"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/discpunt_wen_xuanTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gb_feed"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/discpunt_wenTv"
+                android:layout_alignBottom="@+id/discpunt_wenTv"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/discpunt_wenTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/discpunt_wen_xuanTv"
+                android:layout_toStartOf="@+id/discpunt_wen_xuanTv" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/discount_rela_tang"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/discount_rela_wen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/discpunt_tang_xuanTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gb_feed"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/discpunt_tangTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginRight="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_alignTop="@+id/discpunt_tang_xuanTv"
+                android:layout_toLeftOf="@+id/discpunt_tang_xuanTv"
+                android:layout_toStartOf="@+id/discpunt_tang_xuanTv" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

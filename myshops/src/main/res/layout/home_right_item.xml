@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    >
+
+    <TextView
+        android:id="@+id/home_right_item__nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="韩国柚子茶"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/home_right_item_imageView"
+        android:layout_toEndOf="@+id/home_right_item_imageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp" />
+
+    <ImageView
+        android:id="@+id/home_right_item_imageView"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/home_right_item__nameTv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/home_right_item__chapriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立减100元"
+        android:background="@drawable/gb_right"
+        android:textSize="16sp"
+        android:textColor="#FF5511"
+        android:layout_below="@+id/home_right_item__yuanpriceTv"
+        android:layout_alignLeft="@+id/home_right_item__yuanpriceTv"
+        android:layout_alignStart="@+id/home_right_item__yuanpriceTv"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/home_right_item__jianpriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立减100元"
+        android:textSize="18sp"
+        android:layout_above="@+id/home_right_item__chapriceTv"
+        android:layout_toRightOf="@+id/home_right_item__yuanpriceTv"
+        android:layout_toEndOf="@+id/home_right_item__yuanpriceTv"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <TextView
+        android:id="@+id/home_right_item__yuanpriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100元"
+        android:textColor="#FF5511"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/home_right_item__nameTv"
+        android:layout_alignStart="@+id/home_right_item__nameTv" />
+</RelativeLayout>
